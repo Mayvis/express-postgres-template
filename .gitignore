@@ -1,0 +1,11 @@
+.idea/
+.code/
+node_modules/
+coverage/
+
+.env
+.env.production
+.env.test
+
+database.sqlite
+yarn.lock

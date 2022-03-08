@@ -1,0 +1,38 @@
+{
+  "name": "express-template",
+  "author": "Mayvis Chen <mayvis73911@gmail.com>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "test": "jest",
+    "test:detect": "jest --detectOpenHandles",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "create:route": "node ./cli/route.js",
+    "create:controller": "node ./cli/controller.js",
+    "create:model": "node ./cli/model.js",
+    "create:repo": "node ./cli/repository.js"
+  },
+  "dependencies": {
+    "chalk": "2.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "helmet": "^5.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "inquirer": "^8.2.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "sqlite3": "^5.0.2",
+    "supertest": "^6.2.2"
+  }
+}
